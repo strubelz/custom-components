@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="/vis-editor-vis-editor"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.4/4b4b7962d1bc75af0438f5c81ec1010557bc9ee5/gdx-1.9.4.jar" sourcepath="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.4/f0e4d245a67fc96707610a4260a325fa034c93d1/gdx-1.9.4-sources.jar"/>
+	<classpathentry kind="src" path="/vis-runtime"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/net.onedaybeard.artemis/artemis-odb/2.0.0/bc89f3ee4394f74a00dcb6302b72704c74916a7e/artemis-odb-2.0.0.jar" sourcepath="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/net.onedaybeard.artemis/artemis-odb/2.0.0/879514fa3a89bbd6fbd6d2f10385db70465f2739/artemis-odb-2.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-platform/1.9.4/8e93afecc287ab152179983fc1b5f65db4c2fa4c/gdx-platform-1.9.4-natives-desktop.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-tools/1.9.4/4c15cd85a5077bc7d13914be7cbd8dcce2d31725/gdx-tools-1.9.4.jar" sourcepath="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-tools/1.9.4/bbb53b3d711e1333d5dfc64a3bf74ec38ca20675/gdx-tools-1.9.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.4/4c6c108a9dcbc07096de8594b93f9cab33856fe2/gdx-backend-lwjgl-1.9.4.jar" sourcepath="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.4/bcc145f992ce5ab249ddf7c277c576488753af8f/gdx-backend-lwjgl-1.9.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/Desktop/VisEditor-0.3.4/vis-editor-0.3.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

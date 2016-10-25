@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Plugin-Id: custom-component
+Plugin-Name: CComponent
+Plugin-Description: Custom component loader
+Plugin-Provider: strubel
+Plugin-Version: 1.0.0
+Plugin-Compatibility: 4

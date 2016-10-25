@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CustompComponentPlugin</name>
+	<comment></comment>
+	<projects>
+		<project>libgdx</project>
+		<project>tools</project>
+		<project>vis-editor</project>
+		<project>vis-editor-vis-editor</project>
+		<project>vis-runtime</project>
+		<project>vis-ui</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
