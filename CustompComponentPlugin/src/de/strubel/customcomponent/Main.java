@@ -30,6 +30,9 @@ public class Main extends EditorModule implements ContainerExtension {
 	private Array<UserAddableComponentProvider> defaultUserCompArray = new Array<>();
 	private Array<ComponentTableProvider> defaultCompTableArray = new Array<>();
 	
+	Maybe ad @SkipWir here       
+	
+	
 	private CustomComponentSettingsModule compSettingsModule;
 	private FileMonitor monitor;
 	
