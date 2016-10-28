@@ -9,6 +9,6 @@
 	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-platform/1.9.4/8e93afecc287ab152179983fc1b5f65db4c2fa4c/gdx-platform-1.9.4-natives-desktop.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-tools/1.9.4/4c15cd85a5077bc7d13914be7cbd8dcce2d31725/gdx-tools-1.9.4.jar" sourcepath="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-tools/1.9.4/bbb53b3d711e1333d5dfc64a3bf74ec38ca20675/gdx-tools-1.9.4-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.4/4c6c108a9dcbc07096de8594b93f9cab33856fe2/gdx-backend-lwjgl-1.9.4.jar" sourcepath="C:/Users/Johann/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.4/bcc145f992ce5ab249ddf7c277c576488753af8f/gdx-backend-lwjgl-1.9.4-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Johann/Desktop/VisEditor-0.3.4/vis-editor-0.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Johann/Desktop/VisEditor-0.4.0-SNAPSHOT/vis-editor-0.4.0-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

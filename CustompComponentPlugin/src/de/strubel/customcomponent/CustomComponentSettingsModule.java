@@ -1,15 +1,19 @@
 package de.strubel.customcomponent;
 
-import java.io.FileNotFoundException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardWatchEventKinds;
 
 import com.esotericsoftware.kryo.serializers.TaggedFieldSerializer.Tag;
 import com.kotcrab.vis.editor.module.editor.EditorSettingsModule;
+import com.kotcrab.vis.runtime.plugin.VisPlugin;
 import com.kotcrab.vis.ui.widget.VisLabel;
 import com.kotcrab.vis.ui.widget.VisTable;
 import com.kotcrab.vis.ui.widget.VisTextField;
 
 import de.strubel.customcomponent.CustomComponentSettingsModule.CustomComponentConfig;
 
+@VisPlugin
 public class CustomComponentSettingsModule extends EditorSettingsModule<CustomComponentConfig> {
 	
 	private VisTextField pathTextField;
@@ -26,13 +30,21 @@ public class CustomComponentSettingsModule extends EditorSettingsModule<CustomCo
 		
 		if (config.path.equals("") || config.className.equals("")) {
 			config.edited = false;
-			Main.getInstance().getFileMonitor().removeAllFileChangeListeners();
+			Main.getInstance().getWatchKey().cancel();
 		}else {
 			config.edited = true;
-			Main.getInstance().getFileMonitor().removeAllFileChangeListeners();
 			try {
-				Main.getInstance().getFileMonitor().addFileChangeListener(new FileListenerImpl(), config.path, 500);
-			} catch (FileNotFoundException e) {
+				Main.getInstance().getWatchKey().cancel();
+				Main.getInstance().getWatchHandler().getListeners().clear();
+
+				Path path = Paths.get(this.getPath()).getParent();
+				path.register(Main.getInstance().getWatchService(), StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_DELETE,
+						StandardWatchEventKinds.ENTRY_MODIFY);
+				Main.getInstance().getWatchHandler().getListeners().add(new WatchListenerImpl());
+				
+				Main.getInstance().setWatchPath(path);
+				
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
@@ -58,7 +70,7 @@ public class CustomComponentSettingsModule extends EditorSettingsModule<CustomCo
 		
 		settingsTable.add(pathTable).row();
 		settingsTable.add(classTable).row();
-		settingsTable.add(new VisLabel("Leave one (or both) of the fields empty to ignore this settings."));
+		settingsTable.add(new VisLabel("Leave one (or both) of the fields empty to ignore these settings."));
 		
 		
 	}
