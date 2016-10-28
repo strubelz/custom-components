@@ -35,7 +35,6 @@ public class Main extends EditorModule implements ContainerExtension {
 	private ArrayList<Class<? extends Component>> compList = new ArrayList<Class<? extends Component>>();
 	private Array<UserAddableComponentProvider> defaultUserCompArray = new Array<>();
 	private Array<ComponentTableProvider> defaultCompTableArray = new Array<>();
-	
 	private WatchHandler handler;
 	private WatchService watcher;
 	private Path watchPath;
